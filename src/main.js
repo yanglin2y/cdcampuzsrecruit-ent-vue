@@ -13,6 +13,11 @@ import Qs from 'qs'
 import myuitls from './js/util'
 import less from 'less'
 import store from './vuex/store.js'
+import {
+  Uploader
+} from 'vant';
+
+Vue.use(Uploader)
 
 Vue.use(Divider);
 Vue.use(DropdownMenu)

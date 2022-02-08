@@ -63,7 +63,7 @@ export default {
         const params = new URLSearchParams()
       params.append('hrid', n)
       this.$dialog.confirm({
-        message: '确认拒绝通过'
+        message: '确认删除'
       })
         .then(() => {
            this.axios
