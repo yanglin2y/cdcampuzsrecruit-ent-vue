@@ -97,7 +97,9 @@ export default {
         .then((res) => {
           if (res.data.code === '000000') {
           this.$notify({ type: 'success', message: res.data.message  })
-        this.$router.go(0)
+            setTimeout(() => {
+                  this.$router.go(0)
+          }, 50);
           } else if (res.data.code === '111111') {
             this.$notify({ type: 'warning', message: res.data.message })
           }
